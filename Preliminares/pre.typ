@@ -1,7 +1,7 @@
 #set page(header: [
   Preliminares
   #h(1fr)
-  Demo 2])
+  Demo 3])
 
 #highlight(fill: rgb("#FF75B5"), radius: 8pt, stroke: black, extent: 3pt)[Definición 1] #h(2pt) (Espacio muestral). Consideremos un experimento aleatorio. El conjunto de posibles resultados de ese experimento se conoce como #text(fill: rgb("#B10040"))[espacio muestral.]
 
@@ -16,6 +16,7 @@ $
     (4,1)\,(4,2)\,(4,3)\,(4,4);
     ) 
 $
+donde $(i,j)$ representa el registro de que haya caído $i$ en el primer tetraedro y $j$ en el segundo tetraedro, con $i,j = 1,2,3,4$.
 
 #highlight(fill: rgb("#FF75B5"), radius: 8pt, stroke: black, extent: 3pt)[Definición 2] #h(2pt) (Principio de conteo). Si $Omega$ es un espacio muestral finito y $A subset.eq Omega$, entonces
 $ P(A) = frac(\# text("de casos favorables") (A), \# text("de casos totales") (Omega)) $ 
@@ -37,9 +38,9 @@ donde $cal(F)$ es una familia de eventos $(A,B,C,...)$.
 
 Ejemplo: En términos más simples, una variable aleatoria es una función que asigna un valor, usualmente numérico, al resultado de un experimento aleatorio, por decir, los posibles resultados de tirar dos tetraedros. 
 
-#highlight(fill: rgb("#FF75B5"), radius: 8pt, stroke: black, extent: 3pt)[Definición 4] #h(2pt) (Función de densidad). Una variable aleatoria es llamada absolutamente continua si para cada $x in RR$ existe una función $f: RR arrow.r.long RR_+$ tal que, para toda $x in RR union {-infinity, infinity}$
-$ P[X lt.eq x] = integral_(-infinity)^(x) f(x) #text(font: "Sans Serif Collection", style: "italic")[dx]. $
-A la función $f$ se le llamará #text(fill: rgb("#FF75B5"))[función de densidad] de la varaible aleatoria $X$.
+#highlight(fill: rgb("#FF75B5"), radius: 8pt, stroke: black, extent: 3pt)[Definición 4] #h(2pt) (Función de densidad). Sea $(Omega, cal(F), P)$ un espacio de probabilidad y $X: Omega arrow.r.long RR$ una variable aleatoria discreta. A la función 
+$ f_X (x)=P[{cal(w) in Omega divides X(cal(w))=x}]=P(X=x) $
+se le llama #text(fill: rgb("#B10040"))[función de densidad] de la variable aleatoria $X$.
 
 Ejemplo: Consideremos el lanzamiento de una moneda en donde se quiere contar el número de soles. Tenemos que $Omega = {(a,a),(a,s),(s,a),(s,s)}$, si $cal(w_1)=(a,a), cal(w_2)=(a,s), cal(w_3)=(s,a), cal(w_4)=(s,s)$ entonces 
 $
@@ -66,10 +67,17 @@ $
  )
 $
 
+#figure(
+    image("plot_dens.png", width: 80%),
+    caption: [
+      Gráfica de $f_X (x)$.
+    ],
+  )
+
 #highlight(fill: rgb("#FF75B5"), radius: 8pt, stroke: black, extent: 3pt)[Definición 5] #h(2pt) (Función de distribución). La #text(fill: rgb("#B10040"))[función de distribución] o función de distribución acumulativa $F: RR arrow.r.long [0,1]$ de una variable aleatoria $X$ se define por
 $ F_X (x) = P[X lt.eq x], #h(.5cm) text("para toda") x in RR. $
 
-Ejemplo: En el lanzamiento de un dado se tiene que $Omega = {1,2,3,4,5,6}$, y sabemos por el ejemplo 1.1 que la probabilidad de obtener alguno de los elementos de $Omega$ es de $1/6$. Entonces 
+Ejemplo: En el lanzamiento de un dado se tiene que $Omega = {1,2,3,4,5,6}$, y sabemos por el #text(weight: "bold")[ejemplo 1.1] que la probabilidad de obtener alguno de los elementos de $Omega$ es de $1/6$. Entonces 
 $ 
  F_X (x) = cases(
   0 #h(.2cm)\, "si" x < 1,
@@ -81,3 +89,10 @@ $
   1 #h(.2cm)\, "si" x >= 6
  )
 $
+En la figura 2 se muestra la gráfica de la función de distribución de la variable aleatoria, donde es más sencillo notar la #text(weight: "bold")[acumulación de probabilidad] entre los diferentes valores que puede tomar tal función.
+#figure(
+    image("plot_dist.png", width: 80%),
+    caption: [
+      Gráfica de $F_X (x)$.
+    ],
+  )
