@@ -45,8 +45,8 @@ Metiendo los datos a Python, podemos mostrar la siguiente gráfica:
 #set page(header: [
   Problema de las habitaciones
   #h(1fr)
-  Demo 1])
-  
+  Demo 2])
+
 #figure(
     image("gr_1.png", width: 80%),
     caption: [
@@ -85,11 +85,14 @@ plt.bar(x, probabilidades, align='center', alpha=0.5)
 plt.title('Distribución Binomial')
 plt.xlabel('Número de Éxitos')
 plt.ylabel('Probabilidad')
+
 # Graficar línea vertical en k*sigma desde la media
 k_sigma_value = mu + k * sigma
 plt.axvline(x=k_sigma_value, color='red', linestyle='--', label=f'μ + k*σ, (k={k:.2f})')
 plt.legend()
 plt.show()
+
+# Imprimir valores
 print(f"El valor de σ es: {sigma}")
 print(f"El valor de k es: {k}")
 print(f"El valor de kσ es: {k*sigma}")
