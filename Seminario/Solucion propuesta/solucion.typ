@@ -48,7 +48,7 @@ Metiendo los datos a Python, podemos mostrar la siguiente gráfica:
   Demo 2])
 
 #figure(
-    image("gr_1.png", width: 80%),
+    image("Recursos/gr_1.png", width: 80%),
     caption: [
       Visualización del problema.
     ],
