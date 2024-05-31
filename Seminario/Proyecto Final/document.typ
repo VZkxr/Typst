@@ -28,13 +28,23 @@
   leading: 1.5em,
 )
 
-#align(left)[
+#pagebreak()
+//--- INTRODUCCIÓN ---//
+#align(center)[
   #text(
     font: "Times New Roman", 
     weight: "bold",
     size: 15pt)[Introducción]
 ]
-El mundo matemático va en una dirección acelerada en tanto a comunicación y tecnología se refiere. Como consecuencia, esto ha traído la necesidad de una nueva generación de profesionales que tengan conocimientos en los dos campos antes mencionados.
+Este documento busca analizar las problemáticas subyacentes en la enseñanza de las matemáticas y proponer estrategias innovadoras para abordarlas, con un énfasis en la integración de tecnologías modernas y metodologías didácticas efectivas. A lo largo de la lectura, se pretende proporcionar una visión integral que permita mejorar la enseñanza y en consecuencia, mejores resultados académicos.
+
+En el primer capítulo, se examinarán las causas del desinterés y el miedo hacia las matemáticas, enfocándose en la falta de integración significativa de esta disciplina con otras áreas del conocimiento y la insuficiente visualización geométrica en la enseñanza. Se discutirán estudios y teorías que respaldan estas observaciones, haciendo mención en cómo la educación matemática actual difícilmente se ajusta a la velocidad con la que el mundo avanza gracias a la tecnología.
+\
+\
+El segundo capítulo explorará la metodología de resolución de problemas como una herramienta pedagógica poderosa, enfatizando el uso de tecnologías de la información y la comunicación (TICs). La resolución de problemas, apoyada por las TICs no solo facilita una comprensión más profunda de los conceptos matemáticos, sino que también prepara a los estudiantes para enfrentar desafíos en un mundo laboral cada vez más digitalizado. Se propondrán algunas de las herramientas más comunes y demandadas por el mercado, serán presentadas como recursos valiosos que pueden transformar la forma en que se enseña y se aprende matemáticas.
+\
+\
+Finalmente, en el tercer capítulo, se presentará una propuesta concreta de trabajo basada en la resolución de problemas y el uso de TICs. Se incluirán ejemplos prácticos y secuencias didácticas que demuestran cómo estas metodologías pueden ser implementadas en el aula. El objetivo es mostrar que, mediante una correcta integración de estas herramientas, se puede fomentar un aprendizaje más activo, significativo y alineado con las demandas del siglo XXI.
 
 #pagebreak()
 //--- CAPÍTULO I ---//
@@ -55,7 +65,7 @@ La primera de ellas es que las matemáticas hoy en día, más que una necesidad,
     style: "italic", 
     weight: "light",
     size: 10pt)[
-  Título del proyecto #h(1fr) Capítulo I],
+  Análisis visual e interactivo: Una apuesta a la enseñanza #h(1fr) Capítulo I],
 )
 
 Otra de las dificultades que considero, es de alta prioridad atender, es la falta de visualización geométrica en la matemática; según un estudio realizado por la Universidad Técnica de Manabí (2019) @art1, señala que:
@@ -104,7 +114,7 @@ Hasta antes de la accesibilidad económica para tener un computador en casa, era
     style: "italic", 
     weight: "light",
     size: 10pt)[
-  Título del proyecto #h(1fr) Capítulo II],
+  Análisis visual e interactivo: Una apuesta a la enseñanza #h(1fr) Capítulo II],
 )
 #list(
  [Mathematica: software orientado a la computación de problemas en las áreas científicas, de ingeniería, matemáticas y computacionales. No solo es un sistema de álgebra computacional, sino también un potente lenguaje de programación de propósito general.] 
@@ -117,17 +127,7 @@ Notemos que las TICs en educación son las Tecnologías de la Información y la 
 Por poner un ejemplo, Grisales (2018) @art2 argumenta que un caso particular que permite una evidencia de trascendencia luego de hacer uso del software Mathematica 10, permitió a los estudiantes universitarios de precálculo un aprendizaje más sencillo gracias a una serie de herramientas desarrolladas en el software. Además, se declara que el punto de partida de esa investigación fue el hecho de que el modelo de aprendizaje tradicional no ofrece una experiencia que genere una comprensión sobre los temas, pues no se permite una interacción con el objeto de conocimiento en cuestión. 
 \
 \
-La idea de que la tecnología como la conocemos hoy sea un puente para conectar objetos matemáticos con propiedades, haciendo uso de conceptos manipulables dentro de los programas en lugar de objetos abstractos, está bien sustentada en el artículo de Vega(2015) @art3. De donde 
-#pagebreak()
-#set page(
-  header: text(
-    font: "Times New Roman", 
-    style: "italic", 
-    weight: "light",
-    size: 10pt)[
-  Título del proyecto #h(1fr) Capítulo II],
-)
-parte un argumento más general a la hora de proponer que los límites y las funciones junto con sus operaciones ayuden no solamente a visualizar, si no también a manipular los valores de estos y consecuentemente, intuir un cambio gráfico y analítico como se menciona en "Diseño de herramientas que fomentan el aprendizaje de matemáticas con ayuda de Mathematica 10" @art4. 
+La idea de que la tecnología como la conocemos hoy sea un puente para conectar objetos matemáticos con propiedades, haciendo uso de conceptos manipulables dentro de los programas en lugar de objetos abstractos, está bien sustentada en el artículo de Vega(2015) @art3. De donde parte un argumento más general a la hora de proponer que los límites y las funciones junto con sus operaciones ayuden no solamente a visualizar, si no también a manipular los valores de estos y consecuentemente, intuir un cambio gráfico y analítico como se menciona en "Diseño de herramientas que fomentan el aprendizaje de matemáticas con ayuda de Mathematica 10" @art4. 
 \
 \
 De este modo se puede ver que Manim, como lo define el autor, "es un motor de animación para videos #text(weight: "semibold")[explicativos] de matemáticas. Se utiliza para crear animaciones precisas mediante programación en Python", es una TIC per se, con el apoyo de grandes Sponsors y una comunidad en línea @manim_community. Y pese a no tener estudios de ventajas y crecimiento intelectual así como un ahorro en el tiempo de aprendizaje, su uso sí se ve reflejado por importantes universidades como la Universidad de Alcalá: Escuela Politécnica Superior @th1, y también por grandes divulgadores de las matemáticas, por mencionar algunos: Mates Mike, BlueDot, 3Blue1Brown, que sin duda al observar el crecimiento obtenido video a video, junto con los excelentes comentarios de los usuarios, es claro que nuestro argumento general del párrafo anterior, conserva su esencia al estar haciendo uso de esta paquetería de Python. 
@@ -173,9 +173,9 @@ De aquí podemos identificar una de las problemáticas y es la forma de graficar
     style: "italic", 
     weight: "light",
     size: 10pt)[
-  Título del proyecto #h(1fr) Capítulo III],
+  Análisis visual e interactivo: Una apuesta a la enseñanza #h(1fr) Capítulo III],
 )
-Y es aquí donde presento como propuesta didáctica el uso de Manim para visualizar las iteraciones hasta (aparantemente) $n$ rectángulos. Veamos que el código puede ser proporcionado por ChatGPT ejecutando un prompt como: 
+Y es aquí donde presento como propuesta didáctica el uso de Manim para visualizar las iteraciones hasta (aparentemente) $n$ rectángulos. Veamos que el código puede ser proporcionado por ChatGPT ejecutando un prompt como: 
 #block(
   fill: rgb(211, 225, 245),
   inset: 1.27cm,
@@ -338,7 +338,221 @@ class Area(Scene):
 
         self.wait(3)
 ```
-En donde solamente hay una diferencia de 30 líneas, líneas que bien fueron agregadas por pulir detalles, pero el resultado es todavía mejor para comunicarlo (#link("https://youtu.be/OrobIKN_4yk")[youtube.com/output2]).
+En donde solamente hay una diferencia de 30 líneas, líneas que bien fueron agregadas para pulir detalles, pero el resultado es todavía mejor para comunicarlo (#link("https://youtu.be/OrobIKN_4yk")[youtube.com/output2]).
+\
+\
+Previamente en el seminario, se presentó una secuencia que tenía por título 'La distribución binomial, su esperanza y varianza'. Y si bien no se introdujo una animación en Manim para la visualización de la solución, sí se mostró la gráfica que representaba la función de densidad vinculada con el problema, construida en Python. A continuación se expone la planeación de la secuencia junto con el problema propuesto y el desarrollo de este.
+#pagebreak()
+//--- PLANEACIÓN DE CLASE ---//
+#set page(
+  header: text(
+    font: "Times New Roman", 
+    style: "italic", 
+    weight: "light",
+    size: 10pt)[],
+)
+#align(center)[
+  #text(
+    font: "Times New Roman", 
+    weight: "bold",
+    size: 15pt)[La distribución binomial, su esperanza y varianza]
+]
+#text(weight: "semibold", font: "Times New Roman")[Expositores:]
+- Eduardo Tonathiu López Morales
+- Cristobal Rafael Molina Flores
+- Aarón Aldair García Miranda
+#text(weight: "semibold", font: "Times New Roman")[Nivel y grado educativo de destino:] Nivel medio superior para la materia Estadística y Probabilidad II del sexto semestre del Colegio de Ciencias y Humanidades.
+\
+#text(weight: "semibold", font: "Times New Roman")[Tiempo total de secuencia:] Una sesión de 50 minutos.
+\
+#text(weight: "semibold", font: "Times New Roman")[Justificación de propuesta didáctica:] La misión de los CCH es que los alumnos se desarrollen como personas con sensibilidades e intereses científicos y humanísticos, y el estudio de la probabilidad es el cruce de ambos. En particular, el estudio de la distribución binomial es útil como primer acercamiento a análisis de fenómenos aleatorios en poblaciones.
+\
+#text(weight: "semibold", font: "Times New Roman")[Descripción de las actividades:]
+- Material necesario: Tablet o tableta digitalizadora, laptop para transmisión.
+
+- Objetivos generales:
+  - Que el alumno comprenda la importancia de la probabilidad para su aplicación en problemas de la vida real.
+  - Que el alumno tome en cuenta las alternativas que se pueden tener entre  el uso de GeoGebra y de Python para construcciones gráficas.
+
+- Objetivos de aprendizaje:
+  - Que el alumno conecte ideas y conceptos de la probabilidad de una manera constructiva.
+  - Que el alumno capte la noción gráfica de una función de densidad en un problema de aplicación y no rutinario, interactuando con una simulación desarrollada en GeoGebra.
+
+#pagebreak()
+//--- CAPÍTULO III ---//
+#set page(
+  header: text(
+    font: "Times New Roman", 
+    style: "italic", 
+    weight: "light",
+    size: 10pt)[
+  Análisis visual e interactivo: Una apuesta a la enseñanza #h(1fr) Capítulo III: Planeación de clase],
+)
+
+- Heurísticas a trabajar:
+  - Notación
+  - Analogía
+  - Generalización
+  - Elementos auxiliares
+
+#table(
+  columns: 3,
+  table.header(
+    [Fase], [Desarrollo de actividades], [Tiempo],
+  ),
+  table.cell(
+    rowspan: 2,
+    align: horizon,
+    rotate(-90deg, reflow: true)[
+      Apertura
+    ],  
+  ),
+  [El profesor inicia la clase con la construcción de la variable aleatoria de la distribución Binomial mediante un ejemplo estructurado para la participación de los alumnos, considerando el archivo de preliminares compartido previamente.], [10 minutos],
+  [El profesor da la noción gráfica de la esperanza, varianza y desviación estándar de la variable aleatoria binomial.], [5 minutos],
+  table.cell(
+    rowspan: 3,
+    align: horizon,
+    rotate(-90deg, reflow: true)[
+      Desarrollo
+    ],  
+  ), 
+  [El profesor presenta el siguiente problema en pantalla: \ “Durante la pandemia del 2019, se construyó un software para los hospitales que asignaba una habitación al azar a los pacientes para mantenerlos en cuarentena. En uno de esos hospitales con seis habitaciones, se presentó la situación de que a dos pacientes se les asignó la misma habitación. Se tuvo qué reiniciar el sorteo cuatro veces más para por fin asignarles una habitación distinta. ¿Qué tan común es que suceda esta cantidad de iguales asignaciones? ¿Cómo podría visualizarse qué tan común es?.”],  [3 minutos],
+  [El profesor presenta un simulador de asignación del software realizado en GeoGebra y da espacio a que los alumnos interactúen con el applet.], [2 minutos], 
+  [El profesor invita al alumnado a pensar en una posible respuesta a las preguntas planteadas en el problema presentado en pantalla, con la ayuda del applet, los preliminares y las construcciones desarrolladas en clase. Intentando contestar a las siguientes preguntas:
+  - ¿Notas una secuencia con los datos obtenidos durante la visualización del applet?
+  - ¿Encuentras una relación entre los datos obtenidos durante tu interacción con el applet y las construcciones de esperanza y varianza desarrolladas en clase?
+  - ¿De qué manera podrías inferir una probabilidad con tus respuestas anteriores en relación a las preguntas iniciales del problema?], [10 minutos], 
+  table.cell(
+    rowspan: 3,
+    align: horizon,
+    rotate(-90deg, reflow: true)[
+      Cierre
+    ],  
+  ),  
+  [El profesor interactúa con las respuestas de los alumnos, haciendo observaciones y proponiendo algunas alternativas para llegar a la solución propuesta.], [5 minutos],
+  [El profesor desarrolla la solución en el pizarrón o tableta, tomando en cuenta alguna propuesta del alumnado si es que la hubo.], [10 minutos],
+  [Finalmente, el profesor presenta una gráfica de la visualización del problema desarrollada en Python, junto con el código y la explicación de este, el cual contiene todo lo desarrollado durante la clase.], [5 minutos],
+  table.cell(
+    colspan: 3,
+    align: right,
+    [Tiempo total: 50 minutos],
+  ),
+)
+
+#text(weight: "semibold", font: "Times New Roman")[Propuesta de solución:]
+\
+Notemos que sólo se puede empatar o desempatar, entonces lo que estamos considerando son cuatro ensayos de Bernoulli independientes, así que se trata de un problema con distribución binomial, donde el espacio muestral denotado por $S$ son cuatro sorteos consecutivos de dos personas y la variable aleatoria $X$ es el número de empates en cada $s in S$. \
+Hay 36 formas posibles de asignar las dos habitaciones, de las cuales sólo hay 6 formas de asignar la misma, entonces hay una probabilidad $p = 6/36 = 1/6$ de quedar en una misma habitación y $1-p = 5/6$ de probabilidad de no quedar en la misma habitación. \ 
+Así, la probabilidad que de 4 reinicios en el software, los 4 reinicios asignen la misma habitación es
+$ P(X=4)= mat(4; 4)p^4 (1-p)^0 = (1/6)^4 = 1/1296 $
+Para saber qué tan común es este suceso, usaremos su esperanza y veremos que tan alejado está con la desviación estándar.
+Se tiene que 
+$ 
+  EE[X]=n p = 4(1/6) = 2/3 \ 
+  sigma = sqrt(n p (1-p)) = sqrt(4(1/6)(5/6))=sqrt(5)/3
+$
+Ahora, veamos a cuántas "sigmas" se encuentra el evento: 
+$ 
+  EE[X] + k sigma &= 4 \ 
+  arrow.l.r.double.long k &= (4-EE[X])/sigma \
+  arrow.l.r.double.long k &= frac(4-2/3, sqrt(5)/3) \
+  arrow.l.r.double.long k &= 10/sqrt(5) \
+  & approx 4.47
+$
+El evento se encuentra aproximadamente a $4.5 sigma$, es decir, es bastante raro.
+Metiendo los datos a Python, podemos mostrar la siguiente gráfica:
+#figure(
+    image("Recursos/gr_1.png", width: 80%),
+    caption: [
+      Visualización del problema.
+    ],
+    supplement: [Figura]
+  )
+
+Código:
+```python
+#Importar paqueterías
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import binom
+
+# Parámetros
+n = 4  # ensayos
+p = 1/6  # éxito
+mu = n * p  # media
+sigma = np.sqrt(mu * (1 - p))  # varianza
+
+# Valor objetivo
+target = 4
+
+# Calcular k
+k = (target - mu) / sigma
+
+# x (números de éxitos)
+x = np.arange(0, 5)
+
+# Probabilidad para cada valor x
+probabilidades = binom.pmf(x, n, p)
+
+# Graficar
+plt.bar(x, probabilidades, align='center', alpha=0.5)
+plt.title('Distribución Binomial')
+plt.xlabel('Número de Éxitos')
+plt.ylabel('Probabilidad')
+
+# Graficar línea vertical en k*sigma desde la media
+k_sigma_value = mu + k * sigma
+plt.axvline(x=k_sigma_value, color='red', linestyle='--', label=f'μ + k*σ, (k={k:.2f})')
+plt.legend()
+plt.show()
+
+# Imprimir valores
+print(f"El valor de σ es: {sigma}")
+print(f"El valor de k es: {k}")
+print(f"El valor de kσ es: {k*sigma}")
+print(f"El valor de μ + kσ es: {mu + k*sigma}")
+```
+\
+Como se pude notar, existe una pequeña barrera entre la comunicación visual desarrollada en Manim y una construcción gráfica a través de python; por un lado se puede obtener un video y por el otro una simple imagen. Sin embargo el objetivo explicativo se mantiene en cada caso. 
+\
+Y aunque esto no se observó en la clase muestra debido a falta de tiempo y organización, la idea es que con la corrección se logre mantener la relación visual interactiva de GeoGebra con la relación visual explicativa de Python; los alumnos podrían deducir una probabilidad mediante los conceptos y el registro de sus datos obtenidos en el applet, más aún, llevar estos datos a un programa escrito en algún lenguaje de programación.
+//--- PLANEACIÓN DE CLASE ---//
+#set page(
+  header: text(
+    font: "Times New Roman", 
+    style: "italic", 
+    weight: "light",
+    size: 10pt)[],
+)
+#align(left)[
+  #text(
+    font: "Times New Roman", 
+    weight: "bold",
+    size: 13pt)[Carta a la enseñanza]
+]
+Hasta antes de entrar a la carrera de matemáticas, no tuve noción acerca de la creatividad que es requerida para hacer matemáticas, lo que ocasionó un deterioro en mi desempeño durante el primer semestre. Cuando comencé a dar clases, en un principio creía tener cierta responsabilidad para que mis alumnos no tuvieran el mismo problema que yo al ingresar a la licenciatura y comencé a presentar problemas que requerían cierto nivel de paciencia y creatividad. 
+\
+Después de este seminario me doy cuenta de que la responsabilidad es parte de todos, pues seas profesor o no, siempre habrá el curioso que indague acerca de lo que haces o de lo que estudias. Y hoy más que nunca, se requiere de personas que posean habilidades matemáticas, lógicas y críticas para la creación, desarrollo y sobre todo mantenimiento de las nuevas tecnologías que se presentan día con día. Son aptitudes que necesitan ser entrenadas durante años, con muchos ejercicios y evitando la mecanicidad. 
+\
+Este planteamiento nos lleva a dar sustento a que la resolución de problemas es una gran metodología para preparar a nuevas generaciones a interactuar con un mundo lleno de recursos tecnológicos. En particular los problemas vistos en el seminario pero sobre todo el tipo de análisis que se requirió para su solución (heurísticas) deberían formar parte de una estructura estricta en la educación. A esto sumado con el uso de las TICs (cuyo valor de aprendizaje ya se mencionó en el capítulo II), nos llevaría a una ventaja increíble frente a países desarrollados. 
+\ 
+También se debe considerar el costo que tienen las TICs, pues aunque algunas son de uso libre, la infraestructura no es del todo accesible, por lo que un posible obstáculo puede ser el gasto económico que implica el uso de estas tecnologías desde casa para cada estudiante, lo cual impulsa la inversión del gobierno en la educación y el surgimiento de nuevas becas.
+\
+Se debe dar importancia a esta metodología y a lo que engloba, opino que bajo una correcta dirección de ella, el crecimiento intelectual puede dar mejores resultados para futuras competencias en PISA.
+#set page(
+  header: text(
+    font: "Times New Roman", 
+    style: "italic", 
+    weight: "light",
+    size: 10pt)[],
+)
+#align(left)[
+  #text(
+    font: "Times New Roman", 
+    weight: "bold",
+    size: 13pt)[Autoevaluación]
+]
+Creo que mi desempeño en el seminario fue 'aceptable'; el tiempo que le dediqué fue suficiente para poder entregar la mayoría de los trabajos y participar durante clase, pero me habría gustado dar un poco más de esfuerzo. Sin lugar a duda mi percepción como aprendíz y también como expositor han cambiado, en gran parte fue gracias a los errores que cometí y a la retroalimentación recibida por los profesores.
 #pagebreak()
 //--- REFERENCIAS ---//
 #set page(
@@ -348,4 +562,4 @@ En donde solamente hay una diferencia de 30 líneas, líneas que bien fueron agr
     weight: "light",
     size: 10pt)[],
 )
-#bibliography(title: "Referencias", full: true, "bibli.bib")
+#bibliography(title: "Referencias", full: true, "bibli.bib", style:"apa")
