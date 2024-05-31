@@ -18,16 +18,10 @@
 
 #set page(
   paper: "us-letter",
-  numbering: "1"
+  numbering: "1",
 )
-#set text(lang: "es", 
-  size: 12pt
-)
-#set par(
-  justify: true,
-  leading: 1.5em,
-)
-
+#set par(justify: true, leading: 1.5em)
+#set text(lang: "es", size: 12pt)
 #pagebreak()
 //--- INTRODUCCIÓN ---//
 #align(center)[
@@ -68,7 +62,7 @@ La primera de ellas es que las matemáticas hoy en día, más que una necesidad,
   Análisis visual e interactivo: Una apuesta a la enseñanza #h(1fr) Capítulo I],
 )
 
-Otra de las dificultades que considero, es de alta prioridad atender, es la falta de visualización geométrica en la matemática; según un estudio realizado por la Universidad Técnica de Manabí (2019) @art1, señala que:
+Otra de las dificultades que considero, es de alta prioridad atender, es la falta de visualización geométrica en la matemática; según un estudio realizado por la Universidad Técnica de Manabí @art1, señala que:
 #block(
   fill: luma(230),
   inset: 1.27cm,
@@ -124,10 +118,10 @@ Se hace mención de estas herramientas para dar a conocer la capacidad de cómpu
 \
 Consideremos que en el ensayo anterior, titulado "Metodología inmarcesible", se hizo incapié en el uso de Manim para visualizaciones de construcciones matemáticas, pero a fecha de publicación de este ensayo, no existen estudios acerca del apoyo que ha dado Manim a estudiantes de matemáticas, consecuentemente no es posible formar una argumentación sostenible sobre el uso de esta herramienta, sin embargo podemos plantear un análisis casi análogo. \
 Notemos que las TICs en educación son las Tecnologías de la Información y la Comunicación que se emplean como recursos y herramientas para el aprendizaje y que almacenan, procesan y transmiten información digital. 
-Por poner un ejemplo, Grisales (2018) @art2 argumenta que un caso particular que permite una evidencia de trascendencia luego de hacer uso del software Mathematica 10, permitió a los estudiantes universitarios de precálculo un aprendizaje más sencillo gracias a una serie de herramientas desarrolladas en el software. Además, se declara que el punto de partida de esa investigación fue el hecho de que el modelo de aprendizaje tradicional no ofrece una experiencia que genere una comprensión sobre los temas, pues no se permite una interacción con el objeto de conocimiento en cuestión. 
+Por poner un ejemplo, @art2 argumenta que un caso particular que permite una evidencia de trascendencia luego de hacer uso del software Mathematica 10, permitió a los estudiantes universitarios de precálculo un aprendizaje más sencillo gracias a una serie de herramientas desarrolladas en el software. Además, se declara que el punto de partida de esa investigación fue el hecho de que el modelo de aprendizaje tradicional no ofrece una experiencia que genere una comprensión sobre los temas, pues no se permite una interacción con el objeto de conocimiento en cuestión. 
 \
 \
-La idea de que la tecnología como la conocemos hoy sea un puente para conectar objetos matemáticos con propiedades, haciendo uso de conceptos manipulables dentro de los programas en lugar de objetos abstractos, está bien sustentada en el artículo de Vega(2015) @art3. De donde parte un argumento más general a la hora de proponer que los límites y las funciones junto con sus operaciones ayuden no solamente a visualizar, si no también a manipular los valores de estos y consecuentemente, intuir un cambio gráfico y analítico como se menciona en "Diseño de herramientas que fomentan el aprendizaje de matemáticas con ayuda de Mathematica 10" @art4. 
+La idea de que la tecnología como la conocemos hoy sea un puente para conectar objetos matemáticos con propiedades, haciendo uso de conceptos manipulables dentro de los programas en lugar de objetos abstractos, está bien sustentada en el artículo de @art3. De donde parte un argumento más general a la hora de proponer que los límites y las funciones junto con sus operaciones ayuden no solamente a visualizar, si no también a manipular los valores de estos y consecuentemente, intuir un cambio gráfico y analítico como se menciona en "Diseño de herramientas que fomentan el aprendizaje de matemáticas con ayuda de Mathematica 10" @art4. 
 \
 \
 De este modo se puede ver que Manim, como lo define el autor, "es un motor de animación para videos #text(weight: "semibold")[explicativos] de matemáticas. Se utiliza para crear animaciones precisas mediante programación en Python", es una TIC per se, con el apoyo de grandes Sponsors y una comunidad en línea @manim_community. Y pese a no tener estudios de ventajas y crecimiento intelectual así como un ahorro en el tiempo de aprendizaje, su uso sí se ve reflejado por importantes universidades como la Universidad de Alcalá: Escuela Politécnica Superior @th1, y también por grandes divulgadores de las matemáticas, por mencionar algunos: Mates Mike, BlueDot, 3Blue1Brown, que sin duda al observar el crecimiento obtenido video a video, junto con los excelentes comentarios de los usuarios, es claro que nuestro argumento general del párrafo anterior, conserva su esencia al estar haciendo uso de esta paquetería de Python. 

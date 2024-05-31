@@ -26,7 +26,7 @@
       #v(1fr)
       *Proyecto Final*
       #v(15pt)
-      *Proyecto Final*
+      *Análisis visual e interactivo: Una apuesta a la enseñanza*
       #v(1fr)
       #grid()[
         #set align(left)
