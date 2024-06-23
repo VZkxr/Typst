@@ -1,63 +1,35 @@
-Sea $\{X_n\}_{n in NN}$ una cadena de Markov con espacio de estados $EE=\{0,1,2,3,4\}$, distribución inicial $pi^0 = (1,0,0,0,0)$ y matriz de probabilidades de transición
-  $ PP= 
-  mat(
-    0 , 1 , 0 , 0 , 0;
-    frac(1, 4), 0, frac(3, 4), 0, 0;
-    0, frac(1, 2), 0, frac(1, 2), 0;
-    0, 0, frac(3, 4), 0, frac(1, 4);
-    0, 0, 0, 1, 0;
-  ) $
-Calcula la distribución estacionaria de $X_n_{n in NN}$ para $n$ par, es decir, utilizando $PP$.
-
-#let ofi = [Office]
-#let rem = [_Remote_]
-#let lea = [*On leave*]
-
-#table(
-  columns: 6 * (1fr,),
-  table.header(
-    [Team member],
-    [Monday],
-    [Tuesday],
-    [Wednesday],
-    [Thursday],
-    [Friday]
-  ),
-  [Evelyn Archer],
-    table.cell(colspan: 2, ofi),
-    table.cell(colspan: 2, rem),
-    ofi,
-  [Lila Montgomery],
-    table.cell(colspan: 5, lea),
-  [Nolan Pearce],
-    rem,
-    table.cell(colspan: 2, ofi),
-    rem,
-    ofi,
+#set page(
+  paper: "us-letter",
+  numbering: "1"
+)
+#set text(
+  font: "Times New Roman"
 )
 
-#table(
-  columns: 5 * (1fr,),
-  table.header(
-    [], table.cell(colspan:2, [Blue chip]),
-    [Fresh IPO], [Penny st'k],
-  ),
-  table.cell(
-    rowspan: 4,
-    align: horizon,
-    [
-      USD/day
-    ],
-  ),
-    [0.20], [104], [5], [3.17], 
-    [108], [4], [1.59], [84],  
-    [1], [0.26], [98], [15],
-    [0.01], [195], [4], [7],
-  [
-    USD/hr
-  ], 
-    [57], [2], [3], [6.7]
+#grid(
+  align: center + horizon,
+  columns: (1fr, auto, 1fr),
+  image("img\f_c_unam.png", width: 55%),
+  [*"Universidad Nacional Autónoma de México"* \
+  Facultad de Ciencias \
+  #text(style: "italic")[Matemáticas desde 0] \
+  #text(size: 9pt)[17/Junio/2024]],
+  image("img\unam_c.u.png", width: 55%)
 )
+#line(length: 100%)
+
+#align(center)[
+  #text(
+    font: "Times New Roman",
+    size: 15pt)[Temario de Aritmética]
+]
+*Objetivo general:* #v(.3cm)
+- Que el alumno domine las operaciones de la aritmética básica como suma, resta, multiplicación y división entre distintas variantes como potencias, raíces y fracciones. 
+#v(.5cm)
+*Objetivos específicos:* #v(.3cm)
+- Tener una noción de la necesidad de los diferentes conjuntos de números para resolver operaciones básicas. #v(.3cm)
+- Conocer y aplicar métodos específicos para resolver cada tipo de operación aritmética. #v(.3cm)
+- Comprender y resolver problemas reales de porcentajes. #v(.3cm)
 
 #table(
   columns: (auto, 1fr, auto, auto),
@@ -78,6 +50,15 @@ Calcula la distribución estacionaria de $X_n_{n in NN}$ para $n$ par, es decir,
 )
 
 #pagebreak()
+#set page(
+  header: text(
+    font: "Times New Roman", 
+    style: "italic", 
+    weight: "light",
+    baseline: 8pt,
+    size: 10pt)[
+  Matemáticas desde 0 #h(1fr) Temario de Aritmética #line(stroke: .5pt, length: 100%)]
+)
 
 #table(
   columns: (auto, 1fr),
