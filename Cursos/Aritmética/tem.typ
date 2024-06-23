@@ -40,13 +40,13 @@
   table.cell(rowspan: 2, align: center + horizon, [*Tema*]),
   table.cell(colspan: 2, align: center, [*Horas de curso*]), [*Teorías*], [*Prácticas*], 
   [*1*], [*Conjuntos de números*], [*1*], [],  
-  [*2*], [*La recta real*], [*1*], [*1*],
+  [*2*], [*La recta real*], [*2*], [*2*],
   [*3*], [*Potencias*], [*1*], [*1*],
   [*4*], [*Raíces*], [*1*], [*1*], 
-  [*5*], [*Porcentajes*], [*1*], [*1*],
-  table.cell(colspan: 2, align: right, [*Subtotal*]), [*5*], [*4*],
+  [*5*], [*Porcentajes*], [*2*], [*2*],
+  table.cell(colspan: 2, align: right, [*Subtotal*]), [*7*], [*6*],
   table.cell(colspan: 2, align: right, [*Total*]), 
-  table.cell(colspan: 2, align: center, [*9 hrs*])
+  table.cell(colspan: 2, align: center, [*13 hrs*])
 )
 
 #pagebreak()
@@ -60,6 +60,7 @@
   Matemáticas desde 0 #h(1fr) Temario de Aritmética #line(stroke: .5pt, length: 100%)]
 )
 
+#v(1fr)
 #table(
   columns: (auto, 1fr),
   table.header(
@@ -71,13 +72,16 @@
         1.1 #h(.4cm)Números naturales \ #v(.07cm)
         1.2 #h(.4cm)Números enteros \ #v(.07cm)
         1.3 #h(.4cm)Números racionales \ #v(.07cm)
-        1.4 #h(.4cm)Números irracionales \ #v(.15cm)],  
+        1.4 #h(.4cm)Números irracionales \ #v(.07cm)
+        1.5 #h(.4cm)Números primos \ #v(.15cm)],  
   [*2*], [*La recta real* \ #v(.07cm)
         2.1 #h(.4cm)Propiedades de los signos \ #v(.07cm)
         2.2 #h(.4cm)Suma y resta \ #v(.07cm)
         2.3 #h(.4cm)Multiplicación y división \ #v(.07cm)
         2.4 #h(.4cm)Jerarquía de operaciones \ #v(.07cm)
-        2.5 #h(.4cm)Operaciones con fracciones \ #v(.15cm)],
+        2.5 #h(.4cm)Mínimo común múltiplo \ #v(.07cm)
+        2.6 #h(.4cm)Máximo común divisor \ #v(.07cm)
+        2.7 #h(.4cm)Fracciones \ #v(.15cm)],
   [*3*], [*Potencias* \ #v(.07cm)
         3.1 #h(.4cm)Noción intuitiva de la potencia \ #v(.07cm)
         3.2 #h(.4cm)Operaciones con potencias \ #v(.15cm)],
@@ -87,8 +91,10 @@
   [*5*], [*Porcentajes* \ #v(.07cm)
         5.1 #h(.4cm)Representaciones \ #v(.07cm)
         5.2 #h(.4cm)Conversiones \ #v(.07cm)
-        5.3 #h(.4cm)Problemas de aplicación \ #v(.15cm)]
+        5.3 #h(.4cm)Regla de tres \ #v(.07cm)
+        5.4 #h(.4cm)Problemas de aplicación \ #v(.15cm)]
 )
+#v(1fr)
 
 #pagebreak()
 
